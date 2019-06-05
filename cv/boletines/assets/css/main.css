@@ -1,11 +1,165 @@
-p{
-  color:red;
+/*
+Shiny shamrock: #5FAD56
+Maximum yellow red: #F2C14E
+coral: #F78154
+wintergreen dream: #4D9078
+Raspberry rose: #B4436C
+*/
+h1{
+  font-family: 'Courgette', cursive;
+  text-align: center;
 }
-.red{
-  height: 200px;
-  width: 100pc;
-  background-color: red;
+th{
+  font-family: 'Neucha', cursive;
 }
-#boton-pago{
-  background-color: yellow;
+td{
+  font-family: 'Merriweather', serif;
+}
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+a:hover{
+  opacity: 0.5;
+}
+
+a:active{
+  background: #F2C14E;
+}
+
+.content{
+  padding:1em;
+}
+td{
+  display: block;
+  width: 100%;
+}
+td:nth-of-type(1){
+  font-size: 1.5em;
+  font-weight: bold;
+
+}
+th{
+  display: none;
+}
+
+.title{
+  text-transform: uppercase;
+  text-align: center;
+}
+.paragraph{
+  line-height: 1.5em;
+  font-weight: 200;
+}
+.container {
+    background: #5FAD56;
+    background: -webkit-linear-gradient(to right, #4D9078, #5FAD56);
+    background: linear-gradient(to right, #4D9078, #5FAD56);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+  max-width: 960px;
+  max-height: 500px;
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+  box-shadow: 0 3px 6px rgb(0,0,0,0.16), 0 3px 6px rgb(0,0,0,0.23);
+  border-radius: 4px;
+  position: relative;
+  overflow: scroll;
+}
+
+.table{
+  width: 100%;
+  border-spacing: 0;
+}
+
+.table td, .table th{
+  padding: 1.8em;
+  text-align: left;
+}
+
+.table tr:nth-child(even) {background-color: #F78154}
+
+.fa-star{
+  color: #B4436C;
+}
+
+.main-image{
+  float:left;
+  margin-right: 1em;
+  height: 5em;
+
+}
+
+.title-item{
+  font-size: 2em;
+  border-bottom: solid 2px #4D9078;
+  padding-bottom: 1em;
+}
+
+.position{
+  background-color: #4D9078;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-right: 0.5em;
+}
+
+.actions{
+  position: absolute;
+  top:1em;
+  right: 1em;
+}
+
+.close{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #F2C14E;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgb(0,0,0,0.16), 0 3px 6px rgb(0,0,0,0.23);
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.address{
+  font-weight: bold;
+  color: #4D9078;
+  font-size: 1.2em;
+  margin-top: 2em;
+  display: inline-block;
+}
+
+@media(min-width:900px){
+  th{
+    display: table-cell;
+  }
+  td{
+    width: auto;
+    display: table-cell;
+  }
+  td:nth-of-type(1){
+    font-size: 1em;
+  }
+  .content{
+    padding:1.8em;
+  }
+}
+
+@media (min-height:550px){
+  .content{
+    height: 500px;
+  }
 }
