@@ -13,7 +13,7 @@ cerrado.forEach(function(cl){
     content.classList.add("animated");
 
     setTimeout(function(){
-      location.href = "/boletines";
+      location.href = "/";
     },600);
 
   });
